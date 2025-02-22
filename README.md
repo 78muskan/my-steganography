@@ -1,13 +1,53 @@
-Steganography Project: Hiding Messages in Images
+steganography-tool
+hide messages in images
 
-Steganography is the practice of concealing a secret message within an ordinary file or medium, such as an image, without drawing attention. This project focuses on implementing image-based steganography, where a hidden message is embedded into an image file in such a way that it remains visually unchanged.
+Steganography Tool - Hidden Data in Images
+📌 Introduction
+Steganography is the practice of concealing messages within digital media. This project provides a GUI-based tool that allows users to hide encrypted messages inside images using the Least Significant Bit (LSB) technique. This tool now includes a Streamlit-based web interface for improved usability.
 
-How It Works
-The message is encoded by modifying the least significant bits (LSB) of the image pixels, ensuring minimal distortion.
-The modified image looks identical to the original to the human eye.
-A decoding algorithm retrieves the hidden message from the altered pixels.
-Applications
-Secure communication
-Watermarking digital content
-Preventing unauthorized access to sensitive information
-This project will involve writing a program (in Python, Java, or any preferred language) to encode and decode messages within images, ensuring secure and covert transmission of information. 🚀
+🎯 Features
+🖼 Load an image (PNG, JPG)
+🔑 Encrypt and embed a secret message
+🛠 Decode and retrieve the hidden message
+🔐 Secure encryption using Fernet
+💾 Save the modified image
+🎨 Simple GUI with tkinter and Web UI with Streamlit
+🛠 Technologies Used
+Python (Core Programming Language)
+tkinter (Desktop GUI Development)
+Streamlit (Web-based GUI)
+Pillow (PIL) (Image Processing)
+NumPy (Image Data Manipulation)
+Cryptography (Encryption & Decryption)
+📦 Required Libraries
+Ensure you have the following Python libraries installed:
+
+pip install pillow numpy cryptography streamlit fernet
+🚀 Installation
+Ensure Python is installed on your system.
+
+pip install pillow numpy cryptography streamlit fernet
+🎮 Usage
+Using the Desktop GUI:
+Run the script:
+python steganography_tool.py
+Click "Load Image" and select an image file.
+Enter the secret message you want to hide.
+Click "Generate Key" to create an encryption key.
+Click "Encode Message" to embed the encrypted message into the image.
+Click "Save Image" to store the modified image.
+Using the Web Interface (Streamlit):
+Run the Streamlit app:
+streamlit run streamlit_steganography.py
+Upload an image.
+Enter the secret message and generate an encryption key.
+Click "Encode" to hide the message within the image.
+Click "Decode" to retrieve a hidden message from a modified image.
+🔥 Future Enhancements
+Support for additional image formats (BMP, TIFF)
+Drag-and-drop image loading
+User-defined encryption keys
+Image preview before saving
+Advanced steganography techniques for better security
+📝 License
+This project is open-source and available under the MIT License.
